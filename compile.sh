@@ -1,0 +1,1 @@
+deno run --allow-all reader/main.ts 

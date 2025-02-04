@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLUE LOCK</title>
+        <style>
+            body {
+                background-color: #091f3c;
+                padding-right: 20px; 
+                padding-left: 20px; 
+                margin-bottom: 200px;
+                color: whitesmoke;
+            }
+
+            .chapter-selector {
+                font-size: larger;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
+            .chapter-selector input {
+                margin: 0 10px 0 10px;
+                width: 50px;
+                text-align: center;
+            }
+
+            .reader {
+                display: flex;
+                flex-direction: row-reverse;
+                margin: 0 20px 50px 20px;
+                overflow: scroll;
+            }
+            .reader img {
+                display: block;
+                height: 93vh;
+                margin: 20px;
+                margin-bottom: 20px;
+                border: solid black;
+            }
+
+            .book-selection {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 20px 0 20px;
+                justify-content: center;
+            }
+            .book-selection img {
+                display: block;
+                width: 200px;
+                padding: 10px;
+            }
+        </style>
+        <script>
+            ${READER_SCRIPT_SRC}
+        </script>
+    </head>
+
+    <body>
+        <h1 id=title style="text-align: center;"> BLUE LOCK - Chapter 0 </h1>
+        <div class="chapter-selector">
+            <button onclick="prevChapter()"> Previous Chapter </button>
+            <input id="chapter-input" type="number" value="1" oninput="displayChapter(Number(this.value))"/>
+            <button onclick="nextChapter()"> Next Chapter </button>
+        </div>
+        <div class="reader">
+            
+        </div>
+        <div class="book-selection">
+
+        </div>
+    </body>
+
+</html>
