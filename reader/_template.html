@@ -50,6 +50,16 @@
                 width: 200px;
                 padding: 10px;
             }
+
+            @media screen and (max-width: 900px) {
+                body {
+                    padding: 0 !important;
+                }
+                .reader img {
+                    width: 97vw !important;
+                    height: unset !important;
+                }
+            }
         </style>
         <script>
             ${READER_SCRIPT_SRC}
